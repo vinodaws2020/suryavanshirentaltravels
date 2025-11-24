@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Suryavanshi Tours & Travels</title>
+  <meta name="description" content="Suryavanshi Tours & Travels — Tours, Outstation & Car Rentals from Pune. Affordable pricing per km, comfortable vehicles, and reliable drivers." />
+  <style>
+    :root{
+      --brand:#0b57a4;
+      --accent:#ffb400;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f4f6fb;
+      --radius:12px;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111;}
+    .container{max-width:var(--maxw);margin:24px auto;padding:0 18px;}
+    header{display:flex;align-items:center;gap:18px;padding:18px 0}
+    header img{height:64px;border-radius:8px}
+    header h1{margin:0;font-size:1.6rem;color:var(--brand)}
+    header p{margin:0;color:var(--muted)}
+    nav{background:var(--brand);border-radius:10px;padding:10px 14px;color:white;text-align:center}
+    nav a{color:white;margin:0 10px;text-decoration:none;font-weight:600}
+    .hero{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;background:
+      linear-gradient(90deg,rgba(11,87,164,0.88),rgba(0,0,0,0.3)),
+      url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color:white;padding:48px;border-radius:12px;margin:20px 0;}
+    .hero h2{margin:0;font-size:2rem}
+    .hero p{margin:10px 0 0;color:rgba(255,255,255,0.92)}
+    .cta{margin-top:14px;display:flex;gap:12px}
+    .btn{background:var(--accent);color:#000;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn-outline{background:transparent;border:2px solid rgba(255,255,255,0.18);color:white;padding:10px 14px;border-radius:8px;text-decoration:none}
+    .grid{display:grid;gap:18px}
+    .two-col{grid-template-columns:1fr 380px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    h2.section{color:var(--brand);margin:0 0 12px;font-size:1.2rem}
+    .small{color:var(--muted);font-size:0.95rem}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    table th, table td{padding:10px;border:1px solid #eef0f4;text-align:left}
+    table th{background:var(--brand);color:white}
+    .fleet-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+    .fleet-item img{width:100%;border-radius:10px;display:block}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px}
+    .review{border-left:4px solid var(--accent);padding:10px 12px;margin:12px 0;border-radius:8px;background:#fff}
+    form input, form textarea, form select{width:100%;padding:10px;border-radius:8px;border:1px solid #d6dbe8;margin-top:8px}
+    form label{font-weight:600;font-size:0.95rem}
+    footer{padding:18px 0;text-align:center;color:var(--muted);margin-top:26px}
+    .whatsapp{display:inline-block;background:#25d366;color:white;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+    @media (max-width:900px){
+      .two-col{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start;gap:8px}
+      .hero{align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <!-- Logo: local file path included (system will transform to a URL when served) -->
+      <img src='logo1.png' alt="Suryavanshi Tours & Travels Logo" />
+      <div>
+        <h1>Suryavanshi Tours & Travels</h1>
+        <p class="small">Comfortable Journeys • Trusted Drivers • Transparent Pricing</p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#tours">Tours</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#fleet">Fleet</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <h2>Explore. Experience. Enjoy — With Suryavanshi travels</h2>
+      <p>Tailor-made tour packages across India + affordable car rentals (price per km) for local & outstation trips.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Get a Free Quote</a>
+        <a class="btn-outline" href="#tours">View Tour Packages</a>
+      </div>
+    </section>
+
+    <!-- Main content two columns -->
+    <div class="grid two-col">
+      <!-- Left column -->
+      <div>
+        <!-- About -->
+        <div class="card">
+          <h2 class="section">About Us</h2>
+          <p class="small">Suryavanshi Tours & Travels is a Pune-based travel & car rental company offering family tours, honeymoon packages, corporate travel, pilgrimage tours and outstation cab services. Our mission is to provide safe, comfortable and memorable journeys with professional drivers, clean vehicles and transparent pricing.</p>
+          <ul class="small">
+            <li>✔ 24×7 Customer Support</li>
+            <li>✔ Clean & Sanitized Vehicles</li>
+            <li>✔ Experienced Drivers</li>
+            <li>✔ No Hidden Charges</li>
+          </ul>
+        </div>
+
+        <!-- Tour packages -->
+        <div class="card" id="tours" style="margin-top:14px">
+          <h2 class="section">Popular Tour Packages</h2>
+
+          <div style="margin-top:8px">
+            <h3 style="margin:6px 0">Mahabaleshwar • Panchgani (1 Days)</h3>
+            <p class="small">Venna Lake • Mapro Garden • Table Land • Elephant Point • Ideal for families & couples</p>
+            <p class="small"><strong>From:</strong> ₹3,700 (contact for latest quote)</p>
+          </div>
+
+          <div style="margin-top:10px">
+            <h3 style="margin:6px 0">Goa Beach Holiday (1 Days)</h3>
+            <p class="small">North & South Goa highlights, Forts, Beaches & Water Sports</p>
+            <p class="small"><strong>From:</strong> ₹13,000 (per car — depends on vehicle)</p>
+          </div>
+
+          <div style="margin-top:10px">
+            <h3 style="margin:6px 0">Shirdi Pilgrimage (1 Day)</h3>
+            <p class="small">Sai Baba Temple — ideal for same-day darshan from Pune</p>
+            <p class="small"><strong>From:</strong> ₹6,000 (per car)</p>
+          </div>
+
+          <div style="margin-top:12px">
+            <a class="btn" href="#contact">Enquire About Tours</a>
+          </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="card" style="margin-top:14px">
+          <h2 class="section">Customer Reviews</h2>
+          <div class="review">
+            <strong>Priya S. — Pune</strong>
+            <p class="small">“Excellent service! Clean car and polite driver. On-time pickup.”</p>
+          </div>
+
+          <div class="review">
+            <strong>Rohit K. — Mumbai</strong>
+            <p class="small">“Mahabaleshwar trip was well organised. Great value for money.”</p>
+          </div>
+
+          <div class="review">
+            <strong>Asha P. — Pune</strong>
+            <p class="small">“Safe travel, friendly staff. Recommended for family tours.”</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right column (booking & pricing) -->
+      <aside>
+        <!-- Quick booking -->
+        <div class="card">
+          <h2 class="section">Quick Booking</h2>
+          <p class="small">Fill details below and we'll call to confirm availability & final price.</p>
+
+          <!-- Simple form using mailto as fallback. You can integrate with a backend later. -->
+          <form id="bookingForm" onsubmit="handleSubmit(event)">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" required placeholder="e.g., Amit Patil" />
+
+            <label for="phone">Phone / WhatsApp</label>
+            <input id="phone" name="phone" required placeholder="10-digit mobile number" />
+
+            <label for="service">Service Type</label>
+            <select id="service" name="service" required>
+              <option value="local">Local (City)</option>
+              <option value="outstation">Outstation</option>
+              <option value="tour">Tour Package</option>
+              <option value="airport">Airport Pickup / Drop</option>
+              <option value="family">Family & Group Tours</option>
+              <option value="group">Custom Trip Planning</option>
+              <option value="corporate">Corporate Travel</option>
+              <option value="enquiry">Just Enquiry</option>      
+            </select>
+
+            <label for="pickup">Pickup Location</label>
+            <input id="pickup" name="pickup" placeholder="e.g., Chakan, Pune" />
+
+            <label for="dest">Destination (if any)</label>
+            <input id="dest" name="dest" placeholder="e.g., Mahabaleshwar" />
+
+            <label for="date">Travel Date</label>
+            <input id="date" name="date" type="date" required />
+
+            <label for="message">Message / Requirements</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any special requests"></textarea>
+
+            <div style="margin-top:10px;display:flex;gap:8px;">
+              <button type="submit" class="btn">Request Booking</button>
+              <a class="whatsapp" href="https://wa.me/918888382288?text=Hi%20Suryavanshi%20Tours%20%26%20Travels,%20I%20want%20to%20book%20a%20car." target="_blank">WhatsApp Now</a>
+            </div>
+          </form>
+
+          <small class="small" style="display:block;margin-top:10px">We will call you to confirm & take payment details. Driver allowance & tolls extra.</small>
+        </div>
+
+        <!-- Pricing card -->
+        <div class="card" id="pricing" style="margin-top:14px">
+          <h2 class="section">Pricing (Per KM)</h2>
+          <table>
+            <thead><tr><th>Car Type</th><th>Model</th><th>Price / KM</th><th>Min KM / Day</th></tr></thead>
+            <tbody>
+              <tr><td>Hatchback</td><td>WagonR / Celerio</td><td>₹11</td><td>300</td></tr>
+              <tr><td>Sedan</td><td>Dzire / Etios</td><td>₹12</td><td>300</td></tr>
+              <tr><td>SUV</td><td>Ertiga</td><td>₹15</td><td>300</td></tr>
+              <tr><td>Premium SUV</td><td>Innova Crysta/Kia</td><td>₹20</td><td>300</td></tr>
+              <tr><td>Tempo Traveller</td><td>17–20 Seater</td><td>₹23-₹26</td><td>300</td></tr>
+            </tbody>
+          </table>
+
+          <p class="small" style="margin-top:14px">Driver allowance(300 to 700 RS Depend on Car That You Choose ), tolls & parking are extra and will be charged as applicable.</p>
+        </div>
+
+        <!-- Contact card -->
+        <div class="card" style="margin-top:14px">
+          <h2 class="section">Contact</h2>
+          <p class="small"><strong>Suryavanshi Tours & Travels</strong></p>
+          <p class="small">📍 Chakan, Pune</p>
+          <p class="small">📞 <strong>8888382288</strong></p>
+          <p class="small">✉️ <a href="mailto:suryavanshitoursandtravel@gmail.com">suryavanshitoursandtravel@gmail.com</a></p>
+          <p style="margin-top:10px"><a class="btn" href="#contact">Full Contact & Map</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Fleet -->
+    <section class="card" id="fleet" style="margin-top:18px">
+      <h2 class="section">Our Fleet</h2>
+      <div class="fleet-grid">
+        <div class="fleet-item">
+          <img src="ddcar.webp" alt="Sedan car">
+          <p class="small"><strong>Sedan:</strong> Dzire / Etios — Comfortable for small families & city travel / Local 8/80 Hr ₹2200 - Outstation- 300 KM/day package and ₹12 For extra KM and Driver Allowance ₹300 </p>
+        </div>
+        <div class="fleet-item">
+          <img src="ertiga123.png" alt="SUV">
+          <p class="small"><strong>SUV:</strong> Ertiga / Innova — Spacious for outstation & group travel / Local 8/80 Hr ₹2800 - Outstation- 300 KM/day package and ₹15 For extra KM and Driver Allowance ₹400</p>
+        </div>
+        <div class="fleet-item">
+          <img src="tttemp.jpg" alt="Tempo">
+          <p class="small"><strong>Tempo Traveller:</strong> 13–20 Seater — For large groups & corporate outings / Local 8/80 Hr ₹6000 - Outstation- 300 KM/day package and ₹25 For extra KM and Driver Allowance ₹700</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="card" id="gallery" style="margin-top:18px">
+      <h2 class="section">Gallery</h2>
+      <p class="small">Memories from past tours — click to enlarge (if hosted).</p>
+      <div class="gallery" style="margin-top:12px">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=60" alt="beach" style="width:100%;border-radius:8px">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=60" alt="mountains" style="width:100%;border-radius:8px">
+    </div>
+    </section>
+
+    <!-- Contact full -->
+    <section class="card" id="contact" style="margin-top:18px">
+      <h2 class="section">Contact & Location</h2>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:16px">
+        <div>
+          <p class="small"><strong>Office:</strong> Chakan, Pune</p>
+          <p class="small"><strong>Phone:</strong> 8888382288 </p>
+          <p class="small"><strong>Email:</strong> <a href="mailto:suryavanshitoursandtravel@gmail.com">suryavanshitoursandtravel@gmail.com</a></p>
+          <p class="small">Business Hours: 6:00 AM – 11:00 PM (Daily)</p>
+          <p class="small">For urgent bookings: <a class="whatsapp" href="https://wa.me/918888382288?text=Urgent%20booking%20request" target="_blank">WhatsApp</a></p>
+        </div>
+        <div>
+          <!-- Embedded map (replace src with your Google Maps embed if you have one) -->
+          <div style="border-radius:8px;overflow:hidden">
+            <iframe width="100%" height="250" frameborder="0" style="border:0"
+              src="https://www.google.com/maps?q=chakan%20Pune&output=embed" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Suryavanshi Tours & Travels · Chakan/Hadapsar, Pune · Phone: 8888382288
+    </footer>
+  </div>
+
+  <script>
+    // Set current year
+    document.getElementById('year').innerText = new Date().getFullYear();
+
+    // Simple front-end form handler: opens default mail client as a fallback
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = document.getElementById('bookingForm');
+      const name = encodeURIComponent(form.name.value || '');
+      const phone = encodeURIComponent(form.phone.value || '');
+      const service = encodeURIComponent(form.service.value || '');
+      const pickup = encodeURIComponent(form.pickup.value || '');
+      const dest = encodeURIComponent(form.dest.value || '');
+      const date = encodeURIComponent(form.date.value || '');
+      const message = encodeURIComponent(form.message.value || '');
+
+      const subject = encodeURIComponent('New Booking Request from Website');
+      const body = encodeURIComponent(
+        `Name: ${decodeURIComponent(name)}\nPhone: ${decodeURIComponent(phone)}\nService: ${decodeURIComponent(service)}\nPickup: ${decodeURIComponent(pickup)}\nDestination: ${decodeURIComponent(dest)}\nDate: ${decodeURIComponent(date)}\nMessage: ${decodeURIComponent(message)}`
+      );
+
+      // Primary action: open WhatsApp chat with message for instant booking (works on mobile/desktop with WhatsApp installed)
+      const waText = `Hi Suryavanshi Tours & Travels, I would like to book: Name:${decodeURIComponent(name)}, Phone:${decodeURIComponent(phone)}, Service:${decodeURIComponent(service)}, Pickup:${decodeURIComponent(pickup)}, Destination:${decodeURIComponent(dest)}, Date:${decodeURIComponent(date)}. ${decodeURIComponent(message)}`;
+      const waUrl = "https://wa.me/918888382288?text=" + encodeURIComponent(waText);
+
+      // Try to open whatsapp in a new tab, else fallback to mailto
+      window.open(waUrl, '_blank');
+
+      // Fallback: open default mail client (comment out if you prefer not to use)
+      // window.location.href = `mailto:suryavanshitravels@gmail.com?subject=${subject}&body=${body}`;
+
+      // Simple confirmation
+      alert('Thanks — we opened WhatsApp for booking. If it did not open, please contact us at 8275861288.');
+      form.reset();
+    }
+  </script>
+</body>
+</html>
